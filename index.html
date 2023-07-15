@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pub Site</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
-<body>
+<body onload="setvars()">
     <div class="banner">
         <div class="heading">
         <h1><strong>Post on Instagram</strong></h1>
@@ -14,9 +15,9 @@
         </div>
     </div>
     <div class="input">
-        <textarea name="account" rows="1" cols="1" placeholder="Account Name"></textarea>
-        <textarea name="post" rows="5" cols="1" placeholder="Text goes here"></textarea>
-        <button>Post</button>
+        <textarea name="account" rows="1" cols="1" placeholder="Account Name" id="account"></textarea>
+        <textarea name="post" rows="5" cols="1" placeholder="Text goes here" id="text"></textarea>
+        <button id="postbutton" onclick="getinput()">Post</button>
     </div>
 </body>
 </html>

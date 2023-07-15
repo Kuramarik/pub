@@ -45,7 +45,7 @@ textarea {
     text-align:start;
   }
 
-button {
+#postbutton {
     display:flex;
     align-self:flex-end;
     background-color:#004AAD;
@@ -55,4 +55,8 @@ button {
     padding-top:6px;
     padding-bottom:6px;
     border-radius:12px;
+}
+
+#postbutton :hover {
+    background-color:#003170;
 }
